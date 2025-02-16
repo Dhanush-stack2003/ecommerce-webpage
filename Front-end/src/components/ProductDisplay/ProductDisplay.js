@@ -8,65 +8,6 @@ const ProductDisplay = (props) => {
     const {product} = props;
     const { addtoCart } = useContext(ShopContext)
   return (
-    // <div className={classes.product_display}>
-    //   <div className={classes.left_size}>
-    //     <div className={classes.product_right_side}>
-    //       <div className={classes.product_images}>
-    //         <div className={classes.image_container}>
-    //           <img src={product.image_url} alt="cloth" />
-    //           <img src={product.image_url} alt="cloth" />
-    //           <img src={product.image_url} alt="cloth" />
-    //           <img src={product.image_url} alt="cloth" />
-    //           <img src={product.image_url} alt="cloth" />
-    //         </div>
-    //       </div>
-    //       <div>
-    //         <img className={classes.main_image} src={product.image_url} alt='cloth'/>
-    //       </div>
-
-    //       <div className={classes.product_details}>
-    //         <div className={classes.title}>
-    //           <h3>{product.product_name}</h3>
-    //         </div>
-    //         <div className={classes.description}>
-    //           <p>pure cotton</p>
-    //         </div>
-    //         <div className={classes.new_price}>
-    //           <p>${product.new_price}</p>
-    //         </div>
-    //         <div className={classes.old_price}>
-    //           <p>${product.old_price}</p>
-    //         </div>
-    //         <div className={classes.rating}>
-    //           <img src={star_icon} alt="" />
-    //           <img src={star_icon} alt="" />
-    //           <img src={star_icon} alt="" />
-    //           <img src={star_icon} alt="" />
-    //           <img src={star_dull_icon} alt="" />
-    //         </div>
-    //         <div className={classes.choose_size}>
-    //           <h2>Select size</h2>
-    //           <div className={classes.right_size}>
-    //             <div>S</div>
-    //             <div>M</div>
-    //             <div>L</div>
-    //             <div>XL</div>
-    //             <div>XXL</div>
-    //           </div>
-    //         </div>
-    //         <div className={classes.Add_to_cart}>
-    //           <button
-    //             onClick={() => {
-    //               addtoCart(product.id);
-    //             }}
-    //           >
-    //             Add to cart
-    //           </button>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
     <div className={classes.productDisplay}>
       <div className={classes.productDisplay_left}>
         <div className={classes.productDisplay_img_list}>
