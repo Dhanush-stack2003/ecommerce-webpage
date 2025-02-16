@@ -8,7 +8,7 @@ const [collection,setCollection] = useState([]);
 
 
 const collectionHandler = async () => {
-  await fetch('http://localhost:4000/popularinwomen').then((res)=>res.json()).then((data)=>setCollection(data))
+  await fetch('https://ecommerce-backend-kxgh.onrender.com/popularinwomen').then((res)=>res.json()).then((data)=>setCollection(data))
 }
 
  useEffect(()=>{
