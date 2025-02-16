@@ -1,0 +1,94 @@
+.Footer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Brand_logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.Brand_logo p{
+    color: #383838;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.contact{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    font-size: 20px;
+    color: #252525;
+}
+
+.contact li{
+    cursor: pointer;
+}
+
+.logos{
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.logo_container{
+    padding: 10px;
+    padding-bottom: 6px;
+    border: 1px solid #ebebeb;
+}
+
+.logo_container p{
+    font-size: 20px;
+}
+
+.copyrights{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    gap: 30px;
+}
+
+.copyrights p{
+    font-size: 20px;
+}
+
+@media(max-width:800px){
+    .Footer{
+        gap: 20px;
+    }
+
+    .Brand_logo{
+        gap: 10px;
+        align-items: end;
+    }
+
+    .Brand_logo img{
+        width: 40px;
+    }
+
+    .Brand_logo p{
+        font-size: 25px;
+    }
+
+    .contact{
+        font-size: 14px;
+        gap: 10px;
+
+    }
+
+    .logo_container img{
+        width: 22px;
+    }
+
+    .copyrights{
+        font-size: 13px;
+    }
+}

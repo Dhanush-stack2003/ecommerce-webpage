@@ -1,0 +1,178 @@
+.hero{
+    display: flex;
+    height: 500px;
+    margin-left: auto;
+    align-items: center;
+    background: linear-gradient(180deg,#fde1ff,#e1ffea22 60%);
+}
+
+.leftside{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+    line-height: 1.1;
+}
+
+.leftside h2{
+    color: #090909;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.handIcon > img{
+    width: 80px;
+}
+
+
+.handIcon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero p{
+    font-size: 26px;
+    font-weight: 500;
+    color: #171717;
+}
+
+.latestBtn{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    height: 70px;
+    width: 282px;
+    padding: 10px;
+    border-radius: 40px;
+    align-items: center;
+    background: #ff4141;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.rightSide{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightSide img{
+    height: 100px;
+}
+
+
+
+
+@media(max-width:1280px){
+    .hero_left{
+        padding-left: 100px;
+    }
+    .hero_left h2{
+        font-size: 22px;
+    }
+
+    .hero_left p{
+        font-size: 60px;
+    }
+
+    .hero > .handIcon{
+     width: 80px;
+    }
+
+    .hero_latest_btn{
+        gap: 10px;
+        width: 25px;
+        height: 60px;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .handIcon img{
+        width: 500px;
+    }
+}
+@media(max-width:1024px){
+    .leftside{
+        padding-left: 80px;
+    }
+    .leftside h2{
+        font-size: 20px;
+    }
+
+    .leftside p{
+        font-size: 50px;
+    }
+
+    .hero > .handIcon{
+     width: 65px;
+    }
+
+    .hero_latest_btn{
+        width: 220px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .handIcon img{
+        width: 400px;
+    }
+}
+@media(max-width:800px){
+    .leftside{
+        padding-left: 30px;
+    }
+    .leftside h2{
+        font-size: 16px;
+    }
+
+    .leftside p{
+        font-size: 40px;
+    }
+
+    .hero > handlIcon{
+     width: 50px;
+    }
+
+    .hero_latest_btn{
+        width: 175px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .handIcon img{
+        width: 300px;
+    }
+}
+
+@media(max-width:500px){
+    .hero{
+        flex-direction: column;
+    }
+
+    .rightSide img{
+        display: none;
+    }
+
+    .leftside h2{
+        font-size: 18px;
+    }
+
+    .leftside p{
+        font-size: 50px;
+    }
+
+    .handIcon{
+        width: 55px;
+    }
+
+    .hero_latest_btn{
+        width: 200px;
+        height: 45px;
+        font-size: 14px;
+    }
+}

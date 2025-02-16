@@ -1,0 +1,61 @@
+.container{
+    margin: 0px 10px;
+    padding: 50px;
+}
+
+.description_field div{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.reviews_section div{
+     font-size: 30px;
+    font-weight: 600;
+}
+
+.all_reviews{
+    padding: 20px;
+}
+
+.username{
+    font-size: 20px;
+    font-weight: 500;
+    color: maroon;
+}
+
+.username, p{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media(max-width:1280px){
+    .description_field{
+        margin: 60px;
+    }
+}
+@media(max-width:800px){
+    .description_field{
+        margin: 0px 0px;
+        width: 500px;
+        padding: 0%;
+    }
+    .description p{
+        font-size: 20px;
+    }
+}
+
+

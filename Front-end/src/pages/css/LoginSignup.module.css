@@ -1,0 +1,143 @@
+.LoginSignup{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    padding: 50px;
+}
+
+.LoginSignup h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.LoginSignup hr{
+    height: 6px;
+    width: 20%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+
+.submission_Btn button{
+    width: 200px;
+    height: 50px;
+    background-color: skyblue;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;  
+}
+
+.submission_Btn{
+    display: flex;
+    justify-content: center;
+}
+
+.signupField{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(214, 40, 40);
+    padding: 30px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+
+}
+
+.signupField input{
+    margin-top: 20px;
+    height: 40px;
+    width: 400px;
+    border: 1px solid #555;
+    margin-bottom: 50px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.already_loggedIn{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+
+}
+
+.already_loggedIn p{
+    font-size: 20px;
+}
+
+.already_loggedIn p span{
+    color: red;
+}
+
+.agreement{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 10px;
+ }
+
+.agreement p{
+    font-size: 20px;
+}
+
+
+@media(max-width:1280px){
+    .LoginSignup{
+        padding: 50px;
+    }
+    .LoginSignupField{
+        width: auto;
+        max-height: 500px;
+        max-width: 500px;
+    }
+    .LoginSignup h1{
+        margin: 10px 0px;
+    }
+    .signupField{
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .LoginSignupField input{
+        height: 65px;
+        width: 93%;
+    }
+    .LoginSignupField button{
+        width: 100%;
+    }
+    .already_loggedIn p{
+        font-size: 16px;
+    }
+    .agreement{
+        font-size: 12px;
+        gap: 10px;
+    }
+}
+
+@media(max-width:800px){
+    .LoginSignup{
+        padding: 20px 30px;
+    }
+
+    .LoginSignup h1{
+        font-size: 24px;
+    }
+
+    .LoginSignupField{
+        margin-top: 20px;
+    }
+
+    .LoginSignupField input{
+        height: 50px;
+    }
+    .LoginSignupField button{
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
