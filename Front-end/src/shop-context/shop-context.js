@@ -14,12 +14,12 @@ const defaultCart = () => {
     const [all_product,setAllproducts] = useState([])
     const [cartItems,setCartItems] = useState(defaultCart());
     useEffect(()=>{
-        fetch('http://localhost:4000/allproducts')
+        fetch('https://ecommerce-backend-kxgh.onrender.com/allproducts')
         .then((res)=>res.json())
         .then((data)=>setAllproducts(data))
 
          if (localStorage.getItem("token")) {
-           fetch("http://localhost:4000/getcart", {
+           fetch("https://ecommerce-backend-kxgh.onrender.com/getcart", {
              method: "POST",
              headers: {
                Accept: "application/json",
@@ -36,7 +36,7 @@ const defaultCart = () => {
 const addtoCart = (itemId) => {
     setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}))
     if(localStorage.getItem('token')){
-    fetch('http://localhost:4000/addtocart',{
+    fetch('https://ecommerce-backend-kxgh.onrender.com/addtocart',{
         method:'POST',
         headers:{
             Accept:'application/json',
@@ -52,7 +52,7 @@ const addtoCart = (itemId) => {
 const removeFromCart = (itemId) => {
     setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
     if(localStorage.getItem('token')){
-    fetch('http://localhost:4000/removefromcart',{
+    fetch('https://ecommerce-backend-kxgh.onrender.com/removefromcart',{
         method:'POST',
         headers:{
             Accept:'application/json',
