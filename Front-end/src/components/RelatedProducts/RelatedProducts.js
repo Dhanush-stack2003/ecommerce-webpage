@@ -7,7 +7,7 @@ const RelatedProducts = () => {
 const [data,setData] = useState([]);
 
 const datathandler = async () => {
-  await fetch('http://localhost:4000/relatedproducts').then((res)=>res.json()).then((data)=>setData(data))
+  await fetch('https://ecommerce-backend-kxgh.onrender.com/relatedproducts').then((res)=>res.json()).then((data)=>setData(data))
 }
 
  useEffect(()=>{
