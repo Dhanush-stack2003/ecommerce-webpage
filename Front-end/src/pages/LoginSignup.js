@@ -15,7 +15,7 @@ const LoginSignup = () => {
 
   const loginHandler =async ()=>{
     let responseData;
-    await fetch(`http://localhost:4000/login`,{
+    await fetch('https://ecommerce-backend-kxgh.onrender.com/login',{
       method:'POST',
       headers:{
         Accept:'application/form-data',
@@ -35,7 +35,7 @@ const LoginSignup = () => {
 
   const signinHandler = async ()=>{
     let responseData;
-    await fetch('http://localhost:4000/signin',{
+    await fetch('https://ecommerce-backend-kxgh.onrender.com/signin',{
       method:'POST',
       headers:{
         Accept:'application/form-data',
