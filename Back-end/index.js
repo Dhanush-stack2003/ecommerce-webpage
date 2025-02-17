@@ -99,9 +99,7 @@ app.post('/addproducts',async (req,res)=>{
                 old_price:req.body.old_price,
                 new_price:req.body.new_price
         })
-        console.log(product)
         await product.save();
-        console.log(product)
         res.json({
           success:true,
           name:req.body.name
@@ -111,7 +109,6 @@ app.post('/addproducts',async (req,res)=>{
 //end point for remove products
 app.post('/removeproduct',async (req,res)=>{
         await Product.findOneAndDelete({id:req.body.id})
-        console.log('product deleted')
         res.json({
                 success:true,
                 name:req.body.name
@@ -121,7 +118,6 @@ app.post('/removeproduct',async (req,res)=>{
 //end point for display all product
 app.get('/allproducts',async (req,res)=>{
         const Product_datas = await Product.find({})
-        console.log("products fetched")
         res.send(Product_datas)
 })
 
@@ -168,7 +164,6 @@ app.post('/signin',async (req,res)=>{
                    });
 
                    await user.save()
-                   console.log(user)
 
                    const data = {
                         user:{
